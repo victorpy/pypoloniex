@@ -70,7 +70,7 @@ class LoadPairs(object):
 		try: 
 			info = self.pairs[pair]
 		except:
-			print "KeyError: Couldn't find %s on the %s market" % (coin, market)
+			print ("KeyError: Couldn't find %s on the %s market") % (coin, market)
 			return
 
 		return Coin(info['id'],
